@@ -50,6 +50,7 @@ table {
 <div class="container">
 	<h1 class="title">Hello Docker.</h1>
 	<h2 class="host" style=""><?php echo gethostname(); ?></h1>
+    <h3 class="host"><?php echo "Testing first deploy from Github" . "<br />"; ?></h3>
 </div>
 
 <?php phpinfo(); ?>
