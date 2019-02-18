@@ -36,6 +36,7 @@ body {
     min-height: 269px;
     margin: 0 0 50px 0;
 }
+
 table {
     max-width: 100%;
     background: #fff;
@@ -49,4 +50,9 @@ pre {
     margin: 1em 0;
     text-align: left;
     font-size: 1.5rem;
+}
+.table-title{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0 auto;
 }

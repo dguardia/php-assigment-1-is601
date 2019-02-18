@@ -19,7 +19,7 @@ class Html
             echo '<tr>';
             list($table_title) = $array_assoc;
             foreach ($table_title as $key => &$value):
-                echo '<th>' . $key . '</th>';
+                echo '<th>' . strtoupper($key) . '</th>';
             endforeach;
             echo '</tr>';
             echo '</thead>';

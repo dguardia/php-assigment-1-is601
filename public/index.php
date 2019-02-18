@@ -23,11 +23,16 @@ use Main\Main;
         </div>
     </section>
     <section class="content">
+        <div class="container">
+            <div class="row">
+                <h2 class="table-title"><?php echo "CSV file and output an HTML table"; ?></h2>
+            </div>
+        </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <?php
-                    Main::start("./data/salesJan2009.csv");
+                    Main::start("./data/Sacramentorealestatetransactions.csv");
 
                     //$filename = 'techCrunchUSA.csv'; //salesJan2009.csv
                     ?>
