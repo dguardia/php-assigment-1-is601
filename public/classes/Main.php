@@ -10,8 +10,11 @@ class Main
     {
         $records = CSVParser::getRecords($filename);
 
-        echo "<pre>";
+        /*
+         *  echo "<pre>";
             print_r($records);
-        echo "</pre>";
+            echo "</pre>";
+         * */
+        return $records;
     }
 }

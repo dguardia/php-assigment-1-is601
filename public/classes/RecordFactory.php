@@ -11,9 +11,11 @@ require_once ('Record.php');
 
 class RecordFactory
 {
-    public static function create(Array $array = null)
+    public static function create(Array $fieldNames = null, Array $values = null)
     {
-        $record = new Record();
+
+        $record = new Record($fieldNames, $values);
+
 
         return $record;
     }

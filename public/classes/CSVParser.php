@@ -7,19 +7,30 @@
  */
 
 namespace Main;
-
+require_once ('RecordFactory.php');
 
 class CSVParser
 {
     public static $delimiter = ',';
 
+    /**
+     * @param $filename
+     * @return array
+     */
     static public function getRecords($filename){
         $file = fopen($filename, 'r');
+        $fieldName = array();
+        $count = 0;
         $rows = array();
         while(!feof($file)) {
             $row = fgetcsv($file, 0, self::$delimiter);
+            if($count == 0) {
+                $fieldName = $row;
+            } else {
+                $rows[] = RecordFactory::create($fieldName, $row);
+            }
+            $count++;
 
-            $rows[] = RecordFactory::create();
         }
         fclose($file);
         return $rows;
