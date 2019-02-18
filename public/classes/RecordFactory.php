@@ -7,12 +7,14 @@
  */
 
 namespace Main;
-
+require_once ('Record.php');
 
 class RecordFactory
 {
-    public static function create(Array $array)
+    public static function create(Array $array = null)
     {
+        $record = new Record();
 
+        return $record;
     }
 }

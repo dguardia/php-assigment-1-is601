@@ -19,7 +19,7 @@ class CSVParser
         while(!feof($file)) {
             $row = fgetcsv($file, 0, self::$delimiter);
 
-            $rows[] = $row;
+            $rows[] = RecordFactory::create();
         }
         fclose($file);
         return $rows;
