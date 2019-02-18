@@ -17,13 +17,13 @@ use Main\Main;
 <div class="main">
     <section class="header">
         <div class="container">
-            <h1 class="title">Hello Docker.</h1>
+            <h1 class="title">Hello IS601</h1>
             <h2 class="host" style=""><?php echo gethostname(); ?></h2>
-            <h3 class="host"><?php echo "Testing first deploy from Github" . "<br />"; ?></h3>
+            <h3 class="host"><?php echo "Deploying from Github" . "<br />"; ?></h3>
         </div>
     </section>
     <section class="content">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <?php

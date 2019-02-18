@@ -4,6 +4,7 @@ namespace Main;
 require_once ('CSVParser.php');
 require_once ('RecordFactory.php');
 require_once ('Record.php');
+require_once ('Html.php');
 
 class Main
 {
@@ -11,16 +12,18 @@ class Main
     {
         $records = CSVParser::getRecords($filename);
 
-        foreach ($records as $record)
-        {
+        $table = html::generateTable($records);
+
+//        foreach ($records as $record)
+//        {
+////            echo "<pre>";
+////                print_r($record);
+////            echo "</pre>";
+//            $array = $record->returnArray();
 //            echo "<pre>";
-//                print_r($record);
+//                var_dump($array);
 //            echo "</pre>";
-            $array = $record->returnArray();
-            echo "<pre>";
-                var_dump($array);
-            echo "</pre>";
-        }
+//        }
 
         /*
          *  echo "<pre>";

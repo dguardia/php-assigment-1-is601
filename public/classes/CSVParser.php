@@ -23,7 +23,7 @@ class CSVParser
         $count = 0;
         $rows = array();
         while(!feof($file)) {
-            $row = fgetcsv($file, 0, self::$delimiter);
+            $row = fgetcsv($file, 2000, self::$delimiter);
             if($count == 0) {
                 $fieldName = $row;
             } else {
