@@ -2,4 +2,4 @@
 
 ## This assigment demostrate how to read and display CSV files
 
-![Screenshot](screenshot.png)
+![Screenshot](https://github.com/dguardia/php-assigment-1-is601/blob/master/public/images/IS601-screenshot.jpg)
