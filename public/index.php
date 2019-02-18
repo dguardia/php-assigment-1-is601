@@ -1,56 +1,50 @@
+<?php
+include ('./shared/footerHeader.php');
+require_once ('./classes/Main.php');
+use Main\Main;
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Read CSV file</title>
+    <?php footerHeader::getHead(); ?>
+</head>
 
-<link href='https://fonts.googleapis.com/css?family=Poppins:300' rel='stylesheet' type='text/css'>
+<body>
+<div class="main">
+    <section class="header">
+        <div class="container">
+            <h1 class="title">Hello Docker.</h1>
+            <h2 class="host" style=""><?php echo gethostname(); ?></h2>
+            <h3 class="host"><?php echo "Testing first deploy from Github" . "<br />"; ?></h3>
+        </div>
+    </section>
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <?php
+                    Main::start("./data/sample.csv");
 
-<style>
-body {
-	padding: 0 !important;
-	margin: 0 !important;
-    font-family: 'Poppins', sans-serif;
-    width: auto !important;
-    text-align: center;
-    background: #eaebed;
-}
-.title {
-    margin: 55px 0 30px 0;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 50px;
-    color: rgba(255,255,255,1);
-    font-weight: 100;
-}
-
-.host {
-    margin: 0 0 50px 0;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(255,255,255,0.5);
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 22px;
-    text-transform: uppercase;
-}
-
-.container {
-    padding: 50px 0;
-    background-image: url(https://www.docker.com/sites/all/themes/docker/assets/images/homepage/homepage-banner-bg.svg);
-    background-position: bottom left !important;
-    background-color: #22b8eb;
-    background-repeat: no-repeat;
-    min-height: 269px;
-    margin: 0 0 50px 0;
-}
-table {
-    max-width: 800px;
-    background: #fff;
-    padding: 15px;
-    margin: 15px auto;
-}
-</style>
-
-<div class="container">
-	<h1 class="title">Hello Docker.</h1>
-	<h2 class="host" style=""><?php echo gethostname(); ?></h1>
-    <h3 class="host"><?php echo "Testing first deploy from Github" . "<br />"; ?></h3>
+                    //$filename = 'techCrunchUSA.csv'; //salesJan2009.csv
+                    ?>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
-<?php phpinfo(); ?>
+<!--<div class="container">-->
+<!--    <div class="row">-->
+<!---->
+<!--    </div>-->
+<!--</div>-->
+    <?php //phpinfo(); ?>
+    <?php footerHeader::getFooter();?>
+    </body>
+</html>
+
+

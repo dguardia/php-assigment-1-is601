@@ -1,0 +1,52 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: 'Lato', sans-serif;
+    width: auto !important;
+    text-align: center;
+    background: #eaebed;
+    font-size: 20px;
+}
+.title {
+    margin: 55px 0 30px 0;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 5rem;
+    color: rgba(255,255,255,1);
+    font-weight: 100;
+}
+
+.host {
+    margin: 0 0 50px 0;
+    font-family: 'Lato', sans-serif;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.header {
+    padding: 50px 0;
+    background-image: url(https://www.docker.com/sites/all/themes/docker/assets/images/homepage/homepage-banner-bg.svg);
+    background-position: bottom left !important;
+    background-color: #22b8eb;
+    background-repeat: no-repeat;
+    min-height: 269px;
+    margin: 0 0 50px 0;
+}
+table {
+    max-width: 800px;
+    background: #fff;
+    padding: 15px;
+    margin: 15px auto;
+}
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+    margin: 1em 0;
+    text-align: left;
+    font-size: 1.5rem;
+}
