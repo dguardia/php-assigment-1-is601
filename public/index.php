@@ -27,7 +27,7 @@ use Main\Main;
             <div class="row">
                 <div class="col">
                     <?php
-                    Main::start("./data/sample.csv");
+                    Main::start("./data/salesJan2009.csv");
 
                     //$filename = 'techCrunchUSA.csv'; //salesJan2009.csv
                     ?>

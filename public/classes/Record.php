@@ -15,11 +15,24 @@ class Record
     {
 
         $record = array_combine($fieldNames, $values);
-        echo "<pre>";
-            print_r($record);
-        echo "</pre>";
-        echo "<hr />";
-        $this->createProperty();
+
+        foreach ($record as $property => $value)
+        {
+            $this->createProperty($property, $value);
+        }
+
+//        echo "<pre>";
+//            print_r($this);
+//        echo "</pre>";
+    }
+
+    public function returnArray()
+    {
+        $array = (array) $this;
+//        echo "<pre>";
+//            print_r($this);
+//        echo "</pre>";
+        return $array;
     }
 
     public function createProperty($name = 'first', $value = 'David')
