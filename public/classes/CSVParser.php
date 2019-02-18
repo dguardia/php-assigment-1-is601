@@ -30,7 +30,6 @@ class CSVParser
                 $rows[] = RecordFactory::create($fieldName, $row);
             }
             $count++;
-
         }
         fclose($file);
         return $rows;

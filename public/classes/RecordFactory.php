@@ -13,10 +13,7 @@ class RecordFactory
 {
     public static function create(Array $fieldNames = null, Array $values = null)
     {
-
         $record = new Record($fieldNames, $values);
-
-
         return $record;
     }
 }

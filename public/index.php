@@ -26,27 +26,21 @@ use Main\Main;
         <div class="container">
             <div class="row">
                 <h2 class="table-title"><?php echo "CSV file and output an HTML table"; ?></h2>
+                <p class="lead">The Sacramento real estate transactions file is a list of 985 real estate transactions in the Sacramento area reported over a five-day period, as reported by the Sacramento Bee. Note that this file has address level information that you can choose to geocode, or you can use the existing latitude/longitude in the file.</p>
             </div>
         </div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col">
                     <?php
-                    Main::start("./data/Sacramentorealestatetransactions.csv");
-
-                    //$filename = 'techCrunchUSA.csv'; //salesJan2009.csv
+                    $filename = "./data/Sacramentorealestatetransactions.csv"; //salesJan2009.csv
+                    Main::start($filename);
                     ?>
                 </div>
             </div>
         </div>
     </section>
 </div>
-
-<!--<div class="container">-->
-<!--    <div class="row">-->
-<!---->
-<!--    </div>-->
-<!--</div>-->
     <?php //phpinfo(); ?>
     <?php footerHeader::getFooter();?>
     </body>
