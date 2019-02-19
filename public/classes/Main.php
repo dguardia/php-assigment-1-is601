@@ -11,6 +11,6 @@ class Main
     static public function start($filename)
     {
         $records = CSVParser::getRecords($filename);
-        $table = html::generateTable($records);
+        $table = Html::generateTable($records);
     }
 }

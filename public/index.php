@@ -33,7 +33,7 @@ use Main\Main;
             <div class="row">
                 <div class="col">
                     <?php
-                    $filename = "./data/Sacramentorealestatetransactions.csv"; //salesJan2009.csv
+                    $filename = "./data/salesJan2009.csv"; //salesJan2009.csv
                     Main::start($filename);
                     ?>
                 </div>
